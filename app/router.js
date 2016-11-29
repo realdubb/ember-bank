@@ -7,6 +7,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('new', {
+    path: '/accounts/new'
+  });
 });
 
 export default Router;
