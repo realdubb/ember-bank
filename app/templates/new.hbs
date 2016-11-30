@@ -8,8 +8,9 @@
     <p> <label for="Description"> Description: </label> </p>
     <p> {{input value=model.description type='text' id='description'}}</p>
 
-    <p> <button class="btn"> Save </button>
-        <button class="btn"> Cancel </button>
+    <p>
+        <button class="btn" {{action "save"}}> Save </button>
+        <button class="btn" {{action "cancel"}}> Cancel </button>
     </p>
   </form>
 </div>

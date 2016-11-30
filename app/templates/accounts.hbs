@@ -1,0 +1,21 @@
+<h1>Accounts</h1>
+
+<div class="toolbar">
+  {{#link-to "new" class="btn"}}Create Account{{/link-to}}
+</div>
+
+<ul class="acct-list">
+  {{#each model as |act|}}
+
+    <li>
+
+      {{#link-to "account" act}}
+        <span class="name">{{act.name}}</span>
+        <span class="description">{{act.description}}</span>
+        <span>{{#link-to "edit" act class="btn"}}Edit{{/link-to}}</span>
+      {{/link-to}}
+
+    </li>
+  {{/each}}
+
+</ul>
